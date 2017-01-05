@@ -1,11 +1,12 @@
 begin
 	require 'wiringpi2'
-	GPIO_SIMULATED = false
+	
 	module WiringPi
 		class I2C
 			Wiringpi = Wiringpi2
 		end
 	end
+    
 rescue Exception => e
     module WiringPi
         class I2C
