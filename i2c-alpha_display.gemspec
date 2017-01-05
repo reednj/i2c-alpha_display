@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["reednj@gmail.com"]
 
   spec.summary       = %q{command line gem to control the i2c alphanumeric displays on the RPi}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/reednj/i2c-alpha_display"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
