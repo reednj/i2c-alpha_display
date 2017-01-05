@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+require 'i2c/alpha_display_app'
+I2C::AlphaDisplayApp.new.main
