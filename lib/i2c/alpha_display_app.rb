@@ -1,10 +1,16 @@
-
+require 'trollop'
 require 'i2c/alpha_display'
 
 module I2C
     class AlphaDisplayApp
         def main
-            @display = AlphaDisplay.new(0x70)
+            opts = Trollop::options do
+                version "i2c-disp #{AlphaDisplay::VERSION} (c) 2016 @reednj (reednj@gmail.com)"
+                banner "Usage: i2c-disp [options]"
+                opt :device, "I2C device id for the display", :type => :integer, :default => 0x70
+            end
+
+            @display = AlphaDisplay.new(opts[:device])
 
             STDIN.each_line do |line|
                 begin
