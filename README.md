@@ -1,4 +1,6 @@
-# I2c::AlphaDisplay
+# I2C::AlphaDisplay
+
+A command line gem to make it easy to send data to I2C 7 and 14-segment displays, like this one: https://www.adafruit.com/product/881
 
 ## Installation
 
@@ -6,9 +8,11 @@
 
 ## Usage
 
-Pipe any output to `i2cdisp` and it will do its best to show it on the display. Numberic input will have siffixes added so that it fits on the display. Eg. `12345` => `12.3k`
+After installing the gem pipe any output to `i2cdisp` and it will do its best to show it on the display. Numberic input will have suffixes added so as much fits as possible. Eg. `12345` => `12.3k`
 
     $ echo helo | i2cdisp
+
+![14-segment display](./display.jpg)
 
 ## License
 
