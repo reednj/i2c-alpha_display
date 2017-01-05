@@ -5,7 +5,7 @@ require 'i2c/alpha_display/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "i2c-alpha_display"
-  spec.version       = I2c::AlphaDisplay::VERSION
+  spec.version       = I2C::AlphaDisplay::VERSION
   spec.authors       = ["Nathan Reed"]
   spec.email         = ["reednj@gmail.com"]
 
@@ -22,5 +22,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "true", "~> "
 end
