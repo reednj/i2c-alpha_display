@@ -1,5 +1,6 @@
 require "i2c/alpha_display/version"
 require "i2c/alpha_display/hardware"
+require "i2c/alpha_display/extensions"
 
 module I2C
   class AlphaDisplay
